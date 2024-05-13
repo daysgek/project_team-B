@@ -5,8 +5,8 @@ This repo is a companion repo to the [Provision an EKS Cluster tutorial](https:/
 Terraform configuration files to provision an EKS cluster on AWS.
 
 
-Jenkins34 Project Breakdown
-GitHub Create a private Repository Setup [Team Lead]
+# Jenkins34 Project Breakdown
+# GitHub Create a private Repository Setup [Team Lead]
 
 Create a new GitHub repository.
 
@@ -16,7 +16,9 @@ Structure directories for:
 
 `jenkins/`: Jenkins pipeline files and job configurations.
 
-Jenkins Server Setup [2 Engineers]
+`scripts/`: Shell scripts for automation tasks.
+
+# Jenkins Server Setup [2 Engineers]
 
 **Task 1:** Provision Jenkins Server EC2 Instance
 
@@ -36,7 +38,7 @@ Engineer 2: Install required Jenkins plugins:
 
 Create a Jenkins job that triggers deployments from GitHub commits.
 
-Terraform Node Setup [2 Engineers]
+# Terraform Node Setup [2 Engineers]
 
 **Task 3:** Provision the Terraform Node EC2 Instance
 
@@ -50,7 +52,7 @@ Engineer 3: Use user data to install Terraform on the EC2 instance.
 
 Engineer 4: Verify that Terraform is installed and functional.
 
-Jenkins and Terraform Node Integration [1 Engineer]
+# Jenkins and Terraform Node Integration [1 Engineer]
 
 **Task 5:** Integrate Jenkins with the Terraform Node
 
@@ -58,7 +60,7 @@ Engineer 5: Add the Terraform node to Jenkins via “Manage Jenkins” > “Mana
 
 Engineer 5: Configure Jenkins jobs to run Terraform commands on the node.
 
-EKS Cluster Deployment [2 Engineers]
+# EKS Cluster Deployment [2 Engineers]
 
 **Task 6:** Deploy EKS Cluster
 
@@ -80,7 +82,7 @@ Engineer 6 and Engineer 7: Set up role-based access control for the EKS cluster 
 
 Confirm team members have appropriate roles for EKS resources.
 
-IAM Permissions [1 Engineer]
+# IAM Permissions [1 Engineer]
 
 **Task 8:** Create an IAM Role and Policy
 
@@ -88,7 +90,7 @@ Engineer 8: Write `iam.tf` to create an IAM role and attach a policy for Jenkins
 
 Ensure the role has sufficient permissions to manage EC2, EKS, and CloudWatch resources.
 
-Continuous Integration & Deployment [1 Engineer]
+# Continuous Integration & Deployment [1 Engineer]
 
 **Task 9:** Create Jenkins Pipeline for CI/CD
 
@@ -98,7 +100,7 @@ Add a manual approval stage before applying Terraform changes.
 
 Notify team members via email if the build fails or passes.
 
-Project Review and Documentation [1 Engineer]
+# Project Review and Documentation [1 Engineer]
 
 **Task 10:** Documentation and Review
 
