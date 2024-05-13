@@ -7,6 +7,7 @@ Terraform configuration files to provision an EKS cluster on AWS.
 
 Jenkins34 Project Breakdown
 GitHub Create a private Repository Setup [Team Lead]
+
 Create a new GitHub repository.
 Structure directories for:
 `terraform/`: Terraform configurations for infrastructure.
