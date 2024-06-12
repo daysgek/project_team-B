@@ -4,7 +4,7 @@ pipeline {
                 choice(name: 'deploy_choice', choices:['apply','destroy'],description:'The deployment type')
                   }
     environment {
-        EMAIL_TO = 'opeyemidavies@gmail.com'
+        EMAIL_TO = 'dora_obeng@yahoo.com'
     }
     stages {
         stage('1.Terraform init') {
@@ -41,7 +41,7 @@ pipeline {
                 }
         stage ('5. Email Notification') {
             steps {
-               mail bcc: 'opeyemidavies@gmail.com', body: '''Terraform deployment is completed.
+               mail bcc: 'dora_obeng@yahoo.com', body: '''Terraform deployment is completed.
                Let me know if the changes look okay.
                Thanks,
                Dominion System Technologies,
